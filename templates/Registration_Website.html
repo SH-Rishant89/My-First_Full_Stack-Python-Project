@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Registration_Website_Style.css') }}">
+</head>
+<body>
+
+    <div class="form-card">
+        <h2>Student Registration</h2>
+        
+        <form action="/add_user" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. John Doe" required>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="e.g. 9876543210" required>
+
+            <button type="submit">Submit to Database</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+ /* Change the font and background color of the whole page */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Create a white card for the form to sit inside */
+        .form-card {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        /* Style the labels */
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        /* Style the input boxes */
+        input[type="text"],
+        input[type="date"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box; /* Ensures padding doesn't push the width out */
+            font-size: 16px;
+        }
+
+        /* Highlight the input box when clicked */
+        input:focus {
+            border-color: #0066cc;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 102, 204, 0.3);
+        }
+
+        /* Style the submit button */
+        button {
+            width: 100%;
+            background-color: #0066cc;
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* Make the button darker when hovering over it */
+        button:hover {
+            background-color: #004c99;
+        }
